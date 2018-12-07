@@ -1,0 +1,49 @@
+---
+layout: layout
+title: Research 
+---
+
+<section id="research">
+	<div class="container">
+		<div class="text-left">
+			<h1><strong>Research</strong></h1>
+			<div class="panel panel-default">
+				<p align="left">
+				<h5><strong>DiCoVer[i]</strong></h5>
+				<a href="{{site.url }}/static/slides/PLSummit.pptx">slides</a> 
+				</p>
+				<p align="justify">
+				performance.
+				
+
+				</p>
+			</div>
+			<div class="panel panel-default">
+				<p align="left">
+				<h5><strong>Data Structure-Aware Heap Partitioning</strong></h5>
+				<a href="https://engineering.purdue.edu/~milind/docs/cc17.pdf">paper</a> - <a href="{{site.url }}/static/slides/CC17DSAware.pptx">slides</a> 
+				</p>
+				
+				<p align="justify">
+				Heap or (program) partitioning is a key concept in many applications like computation offloading and region-based memory management.Fundamentally, such applications must generate code such that objects in the heap (and hence the code that operates on those objects) get partitioned depending on how those objects are used. Regardless of the intended application goal, the <b>granularity</b> at which the heap is partitioned is the key factor in partition quality.
+				</p>
+				<p align="justify">
+				Previous work suggested two main granularities:
+				<ul>
+					<li>Class-based: co-locate all objects with the same type in the same partition.</li>
+					<li>Allocation site–based: co-locate objects created at the same allocation site in the same partition.</li>
+				</ul>
+
+				Both approaches share a critical drawback: data structures that are used in different ways can share the same class, or the same allocation sites for internal objects, and hence are forced to be co-located despite their different usage patterns.
+				</p>
+
+				<p align="justify">
+				We introduce the notion of <b>data structure–aware partitioning</b> to allow different data structures to be placed in different partitions.
+
+				
+				Our strategy consists of an analysis that infers <b>ownership properties</b> between objects to identify data structures, and a  <b>code generation phase</b> that encodes this ownership information into objects’ data types and allocation sites without changing the semantics of the code.
+				</p>
+			
+		</div>
+	</div>
+</section>

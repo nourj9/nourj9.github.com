@@ -1,0 +1,14 @@
+markdown: kramdown
+url: http://nourj9.github.io
+title: Nouraldin Jaber
+author: Nouraldin Jaber
+description: Personal Website
+avatar: photo.jpg
+email: njaber@purdue.edu
+github: nourj9 
+twitter: NouraldinJaber
+linkedin: nouraldin-jaber-b601b1a7 
+permalink: /blog/:year/:month/:day/:title
+
+# needed for travis-ci build
+exclude: [vendor]

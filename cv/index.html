@@ -1,0 +1,24 @@
+---
+layout: layout
+title: CV 
+---
+
+<section id="cv">
+	<div class="container">
+		<div class="text-left">
+			<h1><strong>Curriculam Vitae</strong></h1>
+
+		</div>
+			<object id='pdf' data='{{ site.url }}/static/pdf/cv.pdf' type='application/pdf' style='width: 100%; height: 100%; margin: 0; padding: 8px 0 0 0;'>
+				Your browser does not support PDF objects in HTML.<br>
+				Please download the PDF version <a href='{{ site.url }}/static/pdf/cv.pdf'>here</a>
+			</object>
+
+			<script>
+				window.onresize = function() {
+					document.getElementById('cv').style.margin = '0px';
+					document.getElementById('pdf').style.height = window.innerHeight - document.getElementById('pdf').offsetTop - document.getElementById('footer').offsetHeight - 16 + 'px';
+				};
+				window.onload = window.onresize;
+			</script>
+</section>
